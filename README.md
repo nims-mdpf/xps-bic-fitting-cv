@@ -286,64 +286,64 @@ optmode,simple
 XPSのナロースペクトル $f(x)$ を結合エネルギー $x$ の関数として次式で表現する．
 
 ```math
-\begin{aligned}
+\begin{align}
 f(x) &= s(x) + b(x), \tag{1} \\
 s(x) &= \sum_{k=1}^{K} h_k \tilde{V}(x - \mu_k; \sigma_k, \gamma_k). \tag{2}
-\end{aligned}
+\end{align}
 ```
 
 $s(x)$ はシグナル関数， $b(x)$ はバックグラウンド関数である． $s(x)$ は $K$ 個のVoigt関数の線形結合で表現され，1つのVoigt関数 $V(x; \mu, h, w, r)$ は次式で定義される．
 
 ```math
-\begin{aligned}
+\begin{align}
 \tilde{V}(x; \sigma, \gamma) &= V(x; \sigma, \gamma) / V(0; \sigma, \gamma), \tag{3} \\
 V(x; \sigma, \gamma) &= \int_{-\infty}^{+\infty} G(x'; \sigma) L(x - x'; \gamma) dx', \tag{4} \\
 G(x; \sigma) &= \left( \sigma \sqrt{2} \right)^{-1} \exp \left(-x^2 / 2 \sigma^2 \right), \tag{5} \\
 L(x; \gamma) &= \gamma \left( \pi (x^2+\gamma^2) \right)^{-1}, \tag{6} 
-\end{aligned}
+\end{align}
 ```
 
 $h$ はピークの高さ， $\mu$ はピーク位置， $\sigma$ はピークのガウス幅， $\gamma$ はピークのローレンツ幅である．Shirleyのバックグラウンドの場合，
 
 ```math
-\begin{aligned}
+\begin{align}
 b(x) = (b_H - b_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} + b_L. \tag{7} \\
-\end{aligned}
+\end{align}
 ```
 
 ここで $x_L, x_H$ はそれぞれ低結合エネルギー側，高結合エネルギー側の端点の値， $I_L, I_H$ はそれぞれ低結合エネルギー側，高結合エネルギー側のバックグラウンド端点強度である．
 直線バックグラウンドの場合は次の通り．
 
 ```math
-\begin{aligned}
+\begin{align}
 b(x) =  \frac{I_H - I_L}{x_H - x_L} (x - x_L) + I_L. \tag{8}
-\end{aligned}
+\end{align}
 ```
 
 ### ベイズ情報量規準
 数理統計学で用いられるベイズ情報量規準(BIC)を用いてモデル選択を行う．BICは次式で計算される[1]．
 
 ```math
-\begin{aligned}
+\begin{align}
 \text{BIC} = -2 \log \hat{L} + m \log N. \tag{9}
-\end{aligned}
+\end{align}
 ```
 
 $\hat{L}$ は観測されるスペクトルデータ $\{y_i\}_{i=1}^{N}$ とモデル関数 $\{f_i\}_{i=1}^{N}$ のあいだの最大対数尤度， $N$ はスペクトルのデータ数， $m$ はモデル関数に含まれるパラメータ数である．ピーク本数を $K$ として $m = 4 K + 2$ である．観測データに掛かるノイズが一様なガウスノイズであると仮定すると， $\hat{L}$ は次式で計算される．
 
 ```math
-\begin{aligned}
+\begin{align}
 -2 \log \hat{L} &= N \left\{ \log(2\pi \hat{\sigma}^2 + 1) \right\}, \tag{10} \\
 \hat{\sigma}^2 &= \frac{1}{N} \sum_{i=1}^N \left( y_i - f_i \right)^2. \tag{11}
-\end{aligned}
+\end{align}
 ```
 
 一方，観測データがカウントでノイズがポアソンノイズの場合には， $\hat{L}$ は次式で計算される．
 
 ```math
-\begin{aligned}
+\begin{align}
 \hat{L} = - \log \prod_{i=1}^{N} \frac{f_i^{y_i} e^{-f_i}}{y_i !} \tag{12}
-\end{aligned}
+\end{align}
 ```
 
 
