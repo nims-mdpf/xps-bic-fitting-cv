@@ -334,7 +334,7 @@ $\hat{L}$ は観測されるスペクトルデータ $\{y_i\}_{i=1}^{N}$ とモ�
 $$
 \begin{align}
 -2 \log \hat{L} &= N \left\{ \log(2\pi \hat{\sigma}^2 + 1) \right\}, \tag{10} \\
-\hat{\sigma}^2 &= \frac{1}{N} \sum_{i=1}^N \left(y_i - f_i \right)^2. \tag{11}
+\hat{\sigma}^2 &= \frac{1}{N} \sum_{i=1}^N \left( y_i - f_i \right)^2. \tag{11}
 \end{align}
 $$
 
@@ -342,7 +342,7 @@ $$
 
 $$
 \begin{align}
-\hat{L} = - \log \prod_{i=1}^{N} \frac{f_i^{y_i} e^{-f_i}}{y_i !} \tag{12}
+\hat{L} = - \log \prod_{i=1}^{N} \frac{f_i^{y_i} e^{-f_i}}{y_i !}
 \end{align}
 $$
 
