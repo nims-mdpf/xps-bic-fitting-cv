@@ -307,7 +307,7 @@ $h$ はピークの高さ， $\mu$ はピーク位置， $\sigma$ はピーク�
 
 ```math
 \begin{align}
-b(x) = (b_H - b_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} + b_L.  \\
+b(x) = (I_H - I_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} + I_L.  \\
 \end{align}
 ```
 
