@@ -287,8 +287,8 @@ XPSのナロースペクトル $f(x)$ を結合エネルギー $x$ の関数と�
 
 ```math
 \begin{align}
-f(x) &= s(x) + b(x), \tag{1} \\
-s(x) &= \sum_{k=1}^{K} h_k \tilde{V}(x - \mu_k; \sigma_k, \gamma_k). \tag{2}
+f(x) &= s(x) + b(x), \\
+s(x) &= \sum_{k=1}^{K} h_k \tilde{V}(x - \mu_k; \sigma_k, \gamma_k). 
 \end{align}
 ```
 
@@ -296,10 +296,10 @@ $s(x)$ はシグナル関数， $b(x)$ はバックグラウンド関数であ�
 
 ```math
 \begin{align}
-\tilde{V}(x; \sigma, \gamma) &= V(x; \sigma, \gamma) / V(0; \sigma, \gamma), \tag{3} \\
-V(x; \sigma, \gamma) &= \int_{-\infty}^{+\infty} G(x'; \sigma) L(x - x'; \gamma) dx', \tag{4} \\
-G(x; \sigma) &= \left( \sigma \sqrt{2} \right)^{-1} \exp \left(-x^2 / 2 \sigma^2 \right), \tag{5} \\
-L(x; \gamma) &= \gamma \left( \pi (x^2+\gamma^2) \right)^{-1}, \tag{6} 
+\tilde{V}(x; \sigma, \gamma) &= V(x; \sigma, \gamma) / V(0; \sigma, \gamma),  \\
+V(x; \sigma, \gamma) &= \int_{-\infty}^{+\infty} G(x'; \sigma) L(x - x'; \gamma) dx',  \\
+G(x; \sigma) &= \left( \sigma \sqrt{2} \right)^{-1} \exp \left(-x^2 / 2 \sigma^2 \right),  \\
+L(x; \gamma) &= \gamma \left( \pi (x^2+\gamma^2) \right)^{-1},  
 \end{align}
 ```
 
@@ -307,7 +307,7 @@ $h$ はピークの高さ， $\mu$ はピーク位置， $\sigma$ はピーク�
 
 ```math
 \begin{align}
-b(x) = (b_H - b_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} + b_L. \tag{7} \\
+b(x) = (b_H - b_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} + b_L.  \\
 \end{align}
 ```
 
@@ -316,7 +316,7 @@ b(x) = (b_H - b_L) \frac{\int_{x_L}^{x} s(x') dx'}{\int_{x_L}^{x_H} s(x') dx'} +
 
 ```math
 \begin{align}
-b(x) =  \frac{I_H - I_L}{x_H - x_L} (x - x_L) + I_L. \tag{8}
+b(x) =  \frac{I_H - I_L}{x_H - x_L} (x - x_L) + I_L. 
 \end{align}
 ```
 
@@ -325,7 +325,7 @@ b(x) =  \frac{I_H - I_L}{x_H - x_L} (x - x_L) + I_L. \tag{8}
 
 ```math
 \begin{align}
-\text{BIC} = -2 \log \hat{L} + m \log N. \tag{9}
+\text{BIC} = -2 \log \hat{L} + m \log N. 
 \end{align}
 ```
 
@@ -333,8 +333,8 @@ $\hat{L}$ は観測されるスペクトルデータ $\{y_i\}_{i=1}^{N}$ とモ�
 
 ```math
 \begin{align}
--2 \log \hat{L} &= N \left\{ \log(2\pi \hat{\sigma}^2 + 1) \right\}, \tag{10} \\
-\hat{\sigma}^2 &= \frac{1}{N} \sum_{i=1}^N \left( y_i - f_i \right)^2. \tag{11}
+-2 \log \hat{L} &= N \left\{ \log(2\pi \hat{\sigma}^2 + 1) \right\}, \\
+\hat{\sigma}^2 &= \frac{1}{N} \sum_{i=1}^N \left( y_i - f_i \right)^2. 
 \end{align}
 ```
 
@@ -342,7 +342,7 @@ $\hat{L}$ は観測されるスペクトルデータ $\{y_i\}_{i=1}^{N}$ とモ�
 
 ```math
 \begin{align}
-\hat{L} = - \log \prod_{i=1}^{N} \frac{f_i^{y_i} e^{-f_i}}{y_i !} \tag{12}
+\hat{L} = - \log \prod_{i=1}^{N} \frac{f_i^{y_i} e^{-f_i}}{y_i !} 
 \end{align}
 ```
 
