@@ -1,0 +1,5 @@
+bg,auto
+noise,gauss
+pptx,1
+optmode,simple
+dev,0
