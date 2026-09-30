@@ -136,8 +136,8 @@ PVMK_VB_half
   | numPeak               | ピーク本数                                                                 |
   | bic_gauss/bic_poisson | BIC値                                                                      |
   | method                | 最適化ステージ名(auto/param)とバックグラウンドモデルの種類(shirley/linear) |
-  | auto_ID               | 最適化ステップ "auto" の初期モデルごとに与えられるID                       |
-  | param_ID              | 最適化ステップ "param" の初期モデルごとに与えられるID                      |
+  | auto_ID               | 最適化ステージ "auto" の初期モデルごとに与えられるID                       |
+  | param_ID              | 最適化ステージ "param" の初期モデルごとに与えられるID                      |
 
 
 - `gbp_rank(*1)_numpeak(*2)_(*3)_(*4)_parameters.csv`: フィッティングパラメータの数値データ．例：
