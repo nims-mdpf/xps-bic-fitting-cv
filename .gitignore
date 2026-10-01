@@ -1,13 +1,18 @@
 */
 
+!src/
+!sample/
+!demo/
+
 !.gitignore
 !LICENCE
 !README.md
 !pyproject.toml
 !uv.lock
-!src/
-!sample/
-!demo/
+
+!src/**
+!sample/**
+!demo/**
 
 .DS_Store
 */.DS_Store
@@ -15,12 +20,11 @@
 *.ipynb
 *.obj
 *.exe
-
 .history/
-work*/
 **/.ipynb_checkpoints/
+**/__pycache__/**
+work*/
 test*/
 .venv/*
-**/__pycache__/**
 sample/PVMK_VB_half/
 
