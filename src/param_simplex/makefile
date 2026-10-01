@@ -10,7 +10,8 @@ SRC = $(OBJ:%obj=%.cpp)
 CPPFLAGS = -O3
 # CPPFLAGS = -g
 #CPPFLAGS = -O3 -march=native
-CPPFLAGS += -std=c++11 -fopenmp
+# CPPFLAGS += -std=c++11 -fopenmp
+CPPFLAGS += -fopenmp
 # CPPFLAGS += -std=c++1z
 # LFLAGS = -lm -lstdc++fs
 # LIBS = -L/usr/lib -lgsl -llapack -lblas -pthread -lm
